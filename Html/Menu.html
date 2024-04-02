@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+    <link rel="../icon" href="#">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="../Css/Home.css">
+    <link rel="stylesheet" href="../Css/Menu.css">
+
+</head>
+
+
+<body>
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="https://yaoota.com/ar-eg/"><img src="../images/00.png" alt="" style="height: 40px ;"></a>
+
+
+
+        <nav class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn">Go To</button>
+                    <div class="dropdown-content">
+                        <a href="Home.html#man">Man</a>
+                        <a href="Home.html#woman">Woman</a>
+                        <a href="Home.html#popular">Most popular</a>
+                        <a href="Home.html#Clothes">Our Clothes</a>
+                </div>
+            </div>
+
+            <a href="Menu.html">Menu</a>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#work">How To Buy</a>
+           
+            <a href="Team.html">Team</a>
+
+
+
+        </nav>
+       
+
+
+
+        <div class="icons">
+            <i id="cart-btn" class="fas fa-shopping-cart"></i>
+            <i class="fas fa-search" id="search-btn"> </i>
+            <a href="login.html" onclick="delLocalStorage();"><i class="fas fa-user" id="login-btn"></i></a>
+            <i style="font-size: small;" id="userDataDisplay"> </i>
+            <a href="sign_up.html"><i class="fas fa-address-card"></i></a>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+
+
+
+
+    <section class="shopping-cart-container">
+
+        <div class="checkout-container hidden">
+               <h2 class="cart-desc">Your Orders</h2>
+               <div class="cart-details">
+                
+           
+               </div>
+               <div class="total-price">Total Price<span class="total-items-price">$14</span></div>
+               <button class="btn-order" id="complete-order">Compelte Order</button>
+             </div>
+           </main>
+           <div class="model">
+             <h1 class="model-header">Enter Card Details</h1>
+             <form action="" method="POST" id="myForm">
+               <input type="text" name="name" placeholder="Enetr Your Name" required />
+               <input type="text" name="cardNo" placeholder="Enetr Card No" maxlength="16" pattern="^[0-9]*$" title="Please Make Sure that Card Number is valid" required />
+               <input type="text" name="name" placeholder="Enetr CVV" maxlength="3" pattern="^[0-9]*$" title="Please Make Sure that CVV is valid" required />
+               <input type="submit" class="pay-btn" value="Pay" />
+             </form>
+           </div>
+     
+     </section>
+
+
+    
+
+
+
+
+
+<!-- menu section starts  -->
+<section class="popular" id="popular">
+
+    <div class="heading">
+
+        <br>   <br>   <br>   <br>   <br>
+        <span>our top View </span>
+        
+        <h1 class="hea">
+            <span>o</span>
+            <span>u</span>
+            <span>r</span>
+            <span>-</span>
+            <span>c</span>
+            <span>l</span>
+            <span>o</span>
+            <span>t</span>
+            <span>h</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+    </div>
+
+    <div id="box" class="box-containerr ">
+
+        
+    </div>
+
+</section>
+<!-- menu section ends -->
+
+
+
+
+
+    <section class="footer">
+
+        <footer class="footer">
+            <div class="contain">
+                <div class="col">
+                    <h3>Top Categories</h3>
+                    <ul>
+                        <li><a href="">Mobiles</a></li>
+                        <li><a href="">Laptops</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Health and Beauty</a></li>
+                        <li><a href="">Medicine</a></li>
+                        <li><a href="">Food</a></li>
+                        <li><a href="">Baby Feeding</a></li>
+                        <li><a href="">Luggage and Bags</a></li>
+                        <li><a href="">Televisions</a></li>
+                        <li><a href="">Office</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Top Searches</h3>
+                    <ul>
+                        <li><a href="" target="_blank">Apple iPhone 13 Pro Max</a></li>
+                        <li><a href="" target="_blank">Apple iPhone 12 Pro Max</a></li>
+                        <li><a href="" target="_blank">Samsung Galaxy A52</a></li>
+                        <li><a href="" target="_blank">Samsung Galaxy A32</a></li>
+                        <li><a href="" target="_blank">Oppo Reno</a></li>
+                        <li><a href="" target="_blank">Sharp Digital Refrigerator</a></li>
+                        <li><a href="" target="_blank">Fresh Hammer Touch</a></li>
+                        <li><a href="" target="_blank">Fresh Chopper</a></li>
+                        <li><a href="" target="_blank">Digital Plasma Split Air Conditioner</a></li>
+                        <li><a href="" target="_blank">ATA Ceiling Fan</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Top Brands</h3>
+                    <ul>
+                        <li><a href="" target="_blank">Apple</a></li>
+                        <li><a href="" target="_blank">Samsung</a></li>
+                        <li><a href="" target="_blank">Toshiba</a></li>
+                        <li><a href="" target="_blank">Lenovo</a></li>
+                        <li><a href="" target="_blank">HP</a></li>
+                        <li><a href="" target="_blank">Huawei</a></li>
+                        <li><a href="" target="_blank">LG</a></li>
+                        <li><a href="" target="_blank">Microsoft</a></li>
+                        <li><a href="" target="_blank">Sony</a></li>
+                        <li><a href="" target="_blank">Dell</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Top Stores</h3>
+                    <ul>
+                        <li><a href="" target="_blank">Amazon</a></li>
+                        <li><a href="" target="_blank">Jumia</a></li>
+                        <li><a href="" target="_blank">Vodafone</a></li>
+                        <li><a href="" target="_blank">B.TECH</a></li>
+                        <li><a href="" target="_blank">Raneen</a></li>
+                        <li><a href="" target="_blank">lcwaikiki</a></li>
+                        <li><a href="" target="_blank">Carrefour</a></li>
+                        <li><a href="" target="_blank">2B</a></li>
+                        <li><a href="" target="_blank">Cairo Sales</a></li>
+                        <li><a href="" target="_blank">Raw African</a></li>
+                    </ul>
+                </div>
+                <div class="col social">
+                    <h3>Follow us on</h3>
+                    <ul>
+                        <li>
+                            <a href="" target="_blank"><img src="../icon/icons8-twitter.gif" width="32"
+                                    style="width: 32px" /></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"><img src="../icon/icons8-instagram.gif" width="32"
+                                    style="width: 32px" /></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"><img src="../icon/icons8-facebook-48.png" width="32"
+                                    style="width: 32px" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="share">
+                <a href="#" class="btn">facebook</a>
+                <a href="#" class="btn">twitter</a>
+                <a href="#" class="btn">instagram</a>
+                <a href="#" class="btn">pinterest</a>
+                <a href="#" class="btn">linkedin</a>
+            </div>
+
+
+    </section>
+
+
+    <a href="#" class="fas fa-angle-up" id="scroll-top"></a>
+
+    
+    
+    <script src="../JavaScript/Menu.js"></script>
+    <!-- <script src="../JavaScript/Home.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+    <link rel="icon" type="image/x-icon" href="./icon/pop.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="./Css/Home.css">
+    <link rel="stylesheet" href="./Css/Menu.css">
+</head>
+
+
+<body>
+
+
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="https://yaoota.com/ar-eg/"><img src="./images/00.png" alt="" style="height: 40px ;"></a>
+
+
+
+        <nav class="navbar">
+
+            <div class="dropdown">
+                <button class="dropbtn">Go To</button>
+                    <div class="dropdown-content">
+                    <a href="#man">Man</a>
+                    <a href="#woman">Woman</a>
+                    <a href="#popular">Most popular</a>
+                    <a href="#Clothes">Our Clothes</a>
+                </div>
+            </div>
+
+            <a href="./Html/Menu.html">Menu</a>
+            <a href="#home">Home</a>
+           
+            <a href="#work">How To Buy</a>
+           
+            <a href="./Html/Team.html">Team</a>
+
+
+
+        </nav>
+       
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"> </i>
+
+            <a href="./Html/login.html" onclick="delLocalStorage();"><i class="fas fa-user" id="login-btn"></i></a>
+            <i style="font-size: small;" id="userDataDisplay"> </i>
+            <a href="./Html/sign_up.html"><i class="fas fa-address-card"></i></a>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+
+
+
+
+
+
+
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Shop All New</h3>
+            <p>Shopping is one of the basic tasks in human life, as each of us has daily requirements. Every day people
+                go to buy what they need, by going to the commercial markets. There are some people who resort to buying
+                through
+                Internet sites, which are designated for this purpose, as it is a new method of purchasing these days.!
+            </p>
+            <a href="./Html/visa.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="image">
+            <img src="./images/shopping.gif" alt="">
+        </div>
+
+    </section>
+
+
+
+
+
+    <section>
+
+        <h1 class="hea">
+
+            <span>S</span>
+            <span>h</span>
+            <span>o</span>
+            <span>w</span>
+            <span>-</span>
+            <span>M</span>
+            <span>o</span>
+            <span>r</span>
+            <span>e</span>
+
+
+
+        </h1>
+
+
+
+
+        <div id="myBtnContainer">
+
+            <button class="btn" onclick="filterSelection('mob')">
+                Mobiles & Tablets
+            </button>
+            <button class="btn" onclick="filterSelection('com')">
+                Computers & Software
+            </button>
+            <button class="btn" onclick="filterSelection('elec')">
+                Electronics
+            </button>
+
+
+        </div>
+
+        <div class="container">
+            <div class="filterDiv mob"><a href="#" target="_blank">All</a></div>
+            <div class="filterDiv mob"><a href="#" target="_blank">Mobiles</a></div>
+            <div class="filterDiv mob"><a href="#" target="_blank">Tablets</a></div>
+            <div class="filterDiv mob"><a href="#" target="_blank">Mobile & Tablet Accessories</a></div>
+
+            <div class="filterDiv com"><a href="#" target="_blank">All</a></div>
+            <div class="filterDiv com"><a href="#" target="_blank">Computers</a></div>
+            <div class="filterDiv com"><a href="#" target="_blank">Laptops</a></div>
+            <div class="filterDiv com"><a href="#" target="_blank">Computer Accessories</a></div>
+            <div class="filterDiv com"><a href="#" target="_blank">Laptop Accessories</a></div>
+            <div class="filterDiv com"><a href="#" target="_blank">Laptop Accessories</a></div>
+            <div class="filterDiv com"><a href="#" target="_blank">Print, Copy, Scan & Fax</a></div>
+
+
+            <div class="filterDiv elec"><a href="#" target="_blank">All</a></div>
+            <div class="filterDiv elec"><a href="#" target="_blank">Televisions</a></div>
+            <div class="filterDiv elec"><a href="#" target="_blank">Cameras</a></div>
+            <div class="filterDiv elec"><a href="#" target="_blank">Audio and Video</a></div>
+            <div class="filterDiv elec"><a href="#" target="_blank">Portable Audio & MP3</a></div>
+            <div class="filterDiv elec"><a href="#" target="_blank">Telephony</a></div>
+            <div class="filterDiv elec"><a href="#" target="_blank">Gaming</a></div>
+        </div>
+
+
+    </section>
+    <section class="speciality" id="man">
+        <h1 class="hea">
+            <span>m</span>
+            <span>a</span>
+            <span>n</span>
+
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img class="image" src="../images/5.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/2.png" alt="">
+                    <h3>Boot</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="../images/2.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/3.png" alt="">
+                    <h3>T-shirt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/7.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/7.png" alt="">
+                    <h3>Hat</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/4.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/5.png" alt="">
+                    <h3>Shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore autLorem ipsum dolor sit amet consectetur elit.
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/11.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/4.png" alt="">
+                    <h3>Sun Glasses</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore autLorem ipsum dolor s adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/6.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/6.png" alt="">
+                    <h3>Trousers</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="speciality" id="woman">
+
+
+        <h1 class="hea">
+            <span>w</span>
+            <span>o</span>
+            <span>m</span>
+            <span>a</span>
+            <span>n</span>
+
+        </h1>
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <img class="image" src="./images/w1.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/2.png" alt="">
+                    <h3>Boot</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore autsiness siness purposes as </p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/w2.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/w1.png" alt="">
+                    <h3>Dress</h3>
+                    <p>We need to come up with a special thing to do, just so you can be wearing that outfit while we do
+                        itsiness purposes as part of a smart suitsiness purposes as part of a smart suit.
+                        and I saw that exact look in a magazine yesterday.
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/w3.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/w2.png" alt="">
+                    <h3>Blouse</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/w4.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/6.png" alt="">
+                    <h3>Trousers</h3>
+                    <p>Trousers were originally deemed a man’s item of clothing. They were for practical use and safety,
+                        often in the workplace and for business purposes as part of a smart suit.
+                    </p>
+
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/w5.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/w2.png" alt="">
+                    <h3>Blouse</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/w6.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/w3.png" alt="">
+                    <h3>Shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/w7.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/2.png" alt="">
+                    <h3>Boot</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/w8.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/w4.png" alt="">
+                    <h3>Bag</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/w9.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/w5.png" alt="">
+                    <h3>Makeup</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img class="image" src="./images/w10.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/w4.png" alt="">
+                    <h3>Bag</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa
+                        tenetur voluptates aperiam tempore libero labore aut.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/w11.jpeg" alt="">
+                <div class="content">
+                    <img src="./icon/4.png" alt="">
+                    <h3>Sun Glasses</h3>
+                    <p>hen the sun's out, it's time to pull out your fave shades. I don't know what it is exactly, but
+                        there's just something about a pair of sunglasses </p>
+
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="./images/w12.jpeg" alt="">
+
+                <div class="content">
+                    <img src="./icon/7.png" alt="">
+                    <h3>Hat</h3>
+                    <p>A woman is not really dressed unless she is wearing a hat.
+
+                        Fantasy hats give you the possibility to dream.
+
+                        I enjoy hats. And when one has filthy hair, that is a good accessory.
+
+                        Hats make people feel good,</p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="popular" id="popular">
+
+
+        <h1 class="hea">
+            <span>m</span>
+            <span>o</span>
+            <span>s</span>
+            <span>t</span>
+            <br>
+            <br>
+            <span>p</span>
+            <span>o</span>
+            <span>p</span>
+            <span>u</span>
+            <span>l</span>
+            <span>a</span>
+            <span>r</span>
+
+        </h1>
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <span class="price"> $5 <p style="text-decoration: line-through;">$20 </p></span>
+
+                <button type="button">
+                    <img src="./images/a11.jpeg" onmouseover=" onImg1.call( this )" onmouseout="outImg1.call( this )">
+                </button>
+                <h3>tasty burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="visa.html" class="btn">Buy Now</a>
+            </div>
+            <div class="box">
+                <span class="price"> $5 <p style="text-decoration: line-through;">$20 </p></span>
+                <button type="button">
+                    <img src="./images/a21.jpeg" onmouseover=" onImg2.call( this )" onmouseout="outImg2.call( this )">
+                </button>
+                <h3>tasty cakes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="./Html/visa.html" class="btn">Buy Now</a>
+            </div>
+            <div class="box">
+                <span class="price"> $5 <p style="text-decoration: line-through;">$20 </p></span>
+                <button type="button">
+                    <img src="./images/a31.jpeg" onmouseover=" onImg3.call( this )" onmouseout="outImg3.call( this )">
+                </button>
+                <h3>tasty sweets</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="./Html/visa.html" class="btn">Buy Now</a>
+            </div>
+            <div class="box">
+                <span class="price"> $5 <p style="text-decoration: line-through;">$20 </p></span>
+                <button type="button">
+                    <img src="./images/a41.jpeg" onmouseover=" onImg4.call( this )" onmouseout="outImg4.call( this )">
+                </button>
+                <h3>tasty cupcakes</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="./Html/visa.html" class="btn">Buy Now</a>
+            </div>
+            <div class="box">
+                <span class="price"> $5 <p style="text-decoration: line-through;">$20 </p></span>
+                <button type="button">
+                    <img src="./images/a51.jpeg" onmouseover=" onImg5.call( this )" onmouseout="outImg5.call( this )">
+                </button>
+                <h3>cold drinks</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="./Html/visa.html" class="btn">Buy Now</a>
+            </div>
+            <div class="box">
+                <span class="price"> $5 <p style="text-decoration: line-through;">$20 </p></span>
+                <button type="button">
+                    <img src="./images/a61.jpeg" onmouseover=" onImg6.call( this )" onmouseout="outImg6.call( this )">
+                </button>
+                <h3>cold ice-cream</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="./Html/visa.html" class="btn">Buy Now</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="step-container" id="work">
+        <h1 class="hea">
+            <span>h</span>
+            <span>o</span>
+            <span>w</span>
+            <span>-</span>
+            <span>t</span>
+            <span>o</span>
+            <span>-</span>
+            <span>b</span>
+            <span>u</span>
+            <span>y</span>
+        </h1>
+        <section class="steps">
+            <div class="box">
+                <img src="./images/g1.gif" alt="">
+                <h3>Choose your favourites</h3>
+            </div>
+            <div class="box">
+                <img src="./images/g2.gif" alt="">
+                <h3>Fast delivery </h3>
+            </div>
+            <div class="box">
+                <img src="./images/g3.gif" alt="">
+                <h3>Pay cash for the delivery</h3>
+            </div>
+            <div class="box">
+                <img src="./images/g4.gif" alt="">
+                <h3>Enjoy your gift</h3>
+            </div>
+        </section>
+    </div>
+    <section class="gallery" id="Clothes">
+
+        <h1 class="hea">
+            <span>o</span>
+            <span>u</span>
+            <span>r</span>
+            <span>-</span>
+            <span>c</span>
+            <span>l</span>
+            <span>o</span>
+            <span>t</span>
+            <span>h</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./images/12.jpeg" alt="">
+                <div class="content">
+                    <h3>T-shert</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="./Html/visa.html" class="btn"> Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/13.jpeg" alt="">
+                <div class="content">
+                    <h3>Boot</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="./Html/visa.html" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/14.jpeg" alt="">
+                <div class="content">
+                    <h3>Boot</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="./Html/visa.html" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/15.jpeg" alt="">
+                <div class="content">
+                    <h3>Glasses</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="./Html/visa.html" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/16.jpeg" alt="">
+                <div class="content">
+                    <h3>Trousers</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="./Html/visa.html" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/17.jpeg" alt="">
+                <div class="content">
+                    <h3>T-shert</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="./Html/visa.html" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/18.jpeg" alt="">
+                <div class="content">
+                    <h3>Glasses</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="./Html/visa.html" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/19.jpeg" alt="">
+                <div class="content">
+                    <h3>shirt</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="./Html/visa.html" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/20.jpeg" alt="">
+                <div class="content">
+                    <h3>Cap</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="./Html/visa.html" class="btn">Buy now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- menu section starts  -->
+<section class="popular" id="popular">
+
+    <div class="heading">
+        <span>our top View </span>
+        
+        <h1 class="hea">
+            <span>o</span>
+            <span>u</span>
+            <span>r</span>
+            <span>-</span>
+            <span>c</span>
+            <span>l</span>
+            <span>o</span>
+            <span>t</span>
+            <span>h</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+    </div>
+
+    <div id="box" class="box-containerr ">
+
+        
+    </div>
+
+</section>
+<!-- menu section ends -->
+
+    <section>
+        <div id="flip">Click here ! To See Our Brands</div>
+        <div id="panel">
+            <div class="example2">
+                <div class="marquee">
+                    <div>
+                        <img src="./images/p2.png" style="width:100px;height:100px;border-radius:150px;">
+                        <img src="./images/p3.png" style="width:100px;height:100px;border-radius:150px;">
+                        <img src="./images/p5.png" style="width:100px;height:100px;border-radius:150px;">
+                        <img src="./images/p6.png" style="width:100px;height:100px;border-radius:150px;">
+                        <img src="./images/p8.png" style="width:100px;height:100px;border-radius:150px;">
+                        <img src="./images/p9.png" style="width:100px;height:100px;border-radius:150px;">
+                        <img src="./images/p10.png" style="width:100px;height:100px;border-radius:150px;">
+                    </div>
+                </div>
+
+    </section>
+
+    <section class="footer">
+
+        <footer class="footer">
+            <div class="contain">
+                <div class="col">
+                    <h3>Top Categories</h3>
+                    <ul>
+                        <li><a href="">Mobiles</a></li>
+                        <li><a href="">Laptops</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">Health and Beauty</a></li>
+                        <li><a href="">Medicine</a></li>
+                        <li><a href="">Food</a></li>
+                        <li><a href="">Baby Feeding</a></li>
+                        <li><a href="">Luggage and Bags</a></li>
+                        <li><a href="">Televisions</a></li>
+                        <li><a href="">Office</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Top Searches</h3>
+                    <ul>
+                        <li><a href="" target="_blank">Apple iPhone 13 Pro Max</a></li>
+                        <li><a href="" target="_blank">Apple iPhone 12 Pro Max</a></li>
+                        <li><a href="" target="_blank">Samsung Galaxy A52</a></li>
+                        <li><a href="" target="_blank">Samsung Galaxy A32</a></li>
+                        <li><a href="" target="_blank">Oppo Reno</a></li>
+                        <li><a href="" target="_blank">Sharp Digital Refrigerator</a></li>
+                        <li><a href="" target="_blank">Fresh Hammer Touch</a></li>
+                        <li><a href="" target="_blank">Fresh Chopper</a></li>
+                        <li><a href="" target="_blank">Digital Plasma Split Air Conditioner</a></li>
+                        <li><a href="" target="_blank">ATA Ceiling Fan</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Top Brands</h3>
+                    <ul>
+                        <li><a href="" target="_blank">Apple</a></li>
+                        <li><a href="" target="_blank">Samsung</a></li>
+                        <li><a href="" target="_blank">Toshiba</a></li>
+                        <li><a href="" target="_blank">Lenovo</a></li>
+                        <li><a href="" target="_blank">HP</a></li>
+                        <li><a href="" target="_blank">Huawei</a></li>
+                        <li><a href="" target="_blank">LG</a></li>
+                        <li><a href="" target="_blank">Microsoft</a></li>
+                        <li><a href="" target="_blank">Sony</a></li>
+                        <li><a href="" target="_blank">Dell</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Top Stores</h3>
+                    <ul>
+                        <li><a href="" target="_blank">Amazon</a></li>
+                        <li><a href="" target="_blank">Jumia</a></li>
+                        <li><a href="" target="_blank">Vodafone</a></li>
+                        <li><a href="" target="_blank">B.TECH</a></li>
+                        <li><a href="" target="_blank">Raneen</a></li>
+                        <li><a href="" target="_blank">lcwaikiki</a></li>
+                        <li><a href="" target="_blank">Carrefour</a></li>
+                        <li><a href="" target="_blank">2B</a></li>
+                        <li><a href="" target="_blank">Cairo Sales</a></li>
+                        <li><a href="" target="_blank">Raw African</a></li>
+                    </ul>
+                </div>
+                <div class="col social">
+                    <h3>Follow us on</h3>
+                    <ul>
+                        <li>
+                            <a href="" target="_blank"><img src="./icon/icons8-twitter.gif" width="32"
+                                    style="width: 32px" /></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/bahaa8328/" target="_blank"><img src="./icon/icons8-instagram.gif" width="32"
+                                    style="width: 32px" /></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/bahaa.magdy.313" target="_blank"><img src="./icon/icons8-facebook-48.png" width="32"
+                                    style="width: 32px" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="share">
+                <a href="https://www.facebook.com/bahaa.magdy.313" class="btn">facebook</a>
+               
+                <a href="https://www.instagram.com/bahaa8328/" class="btn">instagram</a>
+               
+                <a href="https://www.linkedin.com/in/bahaa-magdy-73b165255/" class="btn">linkedin</a>
+            </div>
+
+
+    </section>
+
+    <a href="#" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <div class="loader-container">
+        <img src="./images/loader.gif" alt="">
+    </div>
+    <script src="./JavaScript/Home.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body,
+.nav,
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    position: relative;
+    background-image: linear-gradient(270deg, #000000 0%, #b80000 100%);
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.nav input:checked~.menu {
+    width: 350px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(240, 233, 233);
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.menu li a:hover {
+    color: #fadc59;
+}
+
+.nav input {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.nav span {
+    position: absolute;
+    left: 25px;
+    width: 25px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: rgb(238, 245, 240);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.nav input:checked~span {
+    background-color: #ebe2e5;
+}
+
+.nav span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.nav input:checked~span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.nav span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.nav input:checked~span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+
+:root {
+    --error-color: #ffffff;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-image: url("../images/ur.jpeg");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-image: linear-gradient(270deg, #000000 0%, #b80000 100%);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 30%;
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 16rem;
+    overflow: auto;
+}
+
+.form h1 {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.form-field {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-field label {
+    display: block;
+    color: rgb(250, 250, 250);
+    margin-bottom: 5px;
+}
+
+.form-field input {
+    border: 1px solid transparent;
+    border-bottom-color: white;
+    background-color: transparent;
+    color: white;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-field input:focus {
+    outline: none;
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.form-field.error input {
+    border-bottom-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-bottom-color: var(--success-color);
+}
+
+.form-control.error i.fa-times-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-field small {
+    color: var(--error-color);
+}
+
+.btn {
+
+    background-image: linear-gradient(270deg, #ebdddd 0%, #4b3b3b 100%);
+    border-radius: 15px;
+    color: #000;
+    font-size: rem;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}

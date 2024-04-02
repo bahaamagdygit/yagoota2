@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/x-icon" href="../icon/in.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="../Css/login.css" />
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div class="nav">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <div class="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="sign_up.html">Sign Up</a></li>
+    </div>
+  </div>
+
+  <div class="container">
+    <form id="login" class="form">
+      <h1>Login</h1>
+      <div class="form-field">
+        <input type="text" placeholder="Enter email" name="email" id="email" autocomplete="off" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-times-circle"></i>
+        <small></small>
+      </div>
+
+      <div class="form-field">
+        <input type="password" placeholder="Password" name="password" id="password" autocomplete="off" />
+        <small></small>
+      </div>
+
+      <div class="form-field">
+        <button type="submit" value="Login" class="btn" onclick="error()" >
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script src="../JavaScript/login.js"></script>
+</body>
+
+</html>
